@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+      <header>
+        <div id="logo"></div>
+        
+        <input type="checkbox" id="burger-menu">
+        <label for="burger-menu"><img src="imgs/menu.png" alt=""></label>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="#container2" class="texto">EPISODIOS</a></li>
+            <li><a href="#container3" class="texto">NOSOTROS</a></li>
+            <li><a href="#container4" class="texto">ENTREVISTAS</a></li>
+            <li><a href="#container6" class="texto">TÓPICOS</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="container1">
+        <span class="titulo">Hello <span class="tachado"> world </span> pale blue dot <span class="azul"> . </span> </span> <br> <br>
+        <span class="texto">El portal de podcasts que explora el mundo de la programación y <br> la tecnología. Nuevos episodios, todos los jueves cada 15 días.</span>
+        <br>
+        <button class="espacio" id="boton1"> <span class="texto2"> CONOCÉ MÁS </span> </button>
+      </main>
+
+      <section id="container2">
+        <div id="container2-1"> <span class="blanco subtitulos"> Episodios </span> </div>
+        <div id="container2-2">
+          <iframe class="iframe-size iframe1-margin" src="https://open.spotify.com/embed-podcast/episode/577AcFvnBA6z771KuxeAAS"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe class="iframe-size" src="https://open.spotify.com/embed-podcast/episode/6IqeNU5603fTlbEKBH0KsT"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe class="iframe-size iframe2-margin iframe1-margin" src="https://open.spotify.com/embed-podcast/episode/6549nyyHoCfeRCpYAWt8bb" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe class="iframe-size iframe2-margin" src="https://open.spotify.com/embed-podcast/episode/7GfZRPZpfutWbS0NibG8ny" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </section>
+
+      <section id="container3">
+        <div id="container3-1">
+          <div id="imagen"></div>
+        </div>
+        <div id="container3-2">
+          <span class="subtitulos">De dónde venimos</span>
+          <p class="texto">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br> <br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="subtitulos" id="container4">Invitados/as estelares</div>
+        <div id="container5">
+          <img class="img-size" src="imgs/foto1.png"  alt="mujer invitada 1">
+          <img class="img-size" src="imgs/foto2.png"  alt="mujer invitada 2">
+          <img class="img-size" src="imgs/foto3.png"  alt="mujer invitada 3">
+          <img class="img-size" src="imgs/foto4.png"  alt="mujeres trabajando 1">
+          <img class="img-size" src="imgs/foto5.png"  alt="mujeres trabajando 2">
+          <img class="img-size" src="imgs/foto6.png"  alt="mujer descansando">
+        </div>
+      </section>
+
+      <section id="container6">
+        <div class="subtitulos" id="container6-1">Algunos de nuestros temas</div>
+        <div id="container6-2">
+          <div id="container6-2-1">
+            <div class="temas"><img src="imgs/icon1.svg" height="104px" width="104px" alt=""> <br> Trabajo remoto</div>
+            <div class="temas"><img src="imgs/icon2.svg" height="104px" width="104px" alt=""> <br> Repensando la <br> programación</div>
+            <div class="temas"><img src="imgs/icon3.svg" height="104px" width="104px" alt=""> <br> Bases del código</div>
+            <div class="temas"><img src="imgs/icon4.svg" height="104px" width="104px" alt=""> <br> Seguridad <br> informática</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="container7">
+        <span class="subtitulos blanco">¿Querés las últimas novedades?</span>
+        <br> <br>
+        <button id="boton2"> <span class="texto"> ESCUCHA LOS EPISODIOS </span> </button>
+      </section>
+
+      <footer id="container8">
+        <p class="texto">© 2019— Hello blue pale dot </p>
+        <div id="container8-1">
+          <a href="https://www.spotify.com/ar/"> <img src="imgs/iconmonstr-spotify-1-16.png" alt="spotify"> </a>
+          <a href="https://www.instagram.com/"> <img src="imgs/iconmonstr-instagram-11-16.png" alt="instagram"> </a>
+          <a href="https://twitter.com/home"> <img src="imgs/iconmonstr-twitter-1-16.png" alt="twitter"> </a>
+          <a href="https://www.facebook.com/"> <img src="imgs/iconmonstr-facebook-4-16.png" alt="facebook"> </a>
+          <a href="https://web.telegram.org/#/login"> <img src="imgs/iconmonstr-telegram-4-16.png" alt="telegram"> </a>
+        </div>
+      </footer>
+
+  </body>
+</html>

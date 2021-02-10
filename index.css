@@ -1,0 +1,587 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+#logo {
+    margin-top: 25px;
+    height: 36px;
+    width: 36px;
+    background-image: url(imgs/logo.svg);
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.texto {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    line-height: 26px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+#burger-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    padding-top: 25px;
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgb(0,0,0,0.3);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.menu li a {
+    display: block;
+    padding: 0px 20px;
+
+}
+
+.menu li a:hover {
+    color: #00F3BB;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.menu li a:active {
+    color: #060A24;
+    opacity: .5;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+#container1 {
+    height: 369px;
+    width: 100%;
+    padding-top: 120px;
+    padding-left: 200px;
+}
+
+.titulo {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 64px;
+    letter-spacing: 0;
+    color: #060A24;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.azul {
+    color: blue;
+}
+
+#boton1 {
+    height: 56px;
+    width: 226px;
+    background-color: #00F3BB;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.texto2 {
+    font-size: 18px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+}
+
+.espacio {
+    margin-top: 55px;
+}
+
+#boton1:hover {
+    cursor: pointer;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+#boton1:hover .texto2{
+    color: white;
+}
+
+#container2 {
+    height: 1042.6px;
+    width: 100%;
+    background-color: blue;
+    clip-path: polygon(0px 100px, 100% 0px, 100% 900px, 0px 1042.6px);
+    display: flex;
+    flex-direction: column;
+}
+
+#container2-1 {
+    height: 200px;
+    width: 1240px;
+    padding-top: 150px;
+    margin-left: 100px;
+    padding-left: 100px;
+    display: block;
+}
+
+.subtitulos {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+}
+
+.blanco {
+    color: white;
+}
+
+#container2-2 {
+    width: 1240px;
+    height: 536px;
+    margin-left: 100px;
+    margin-top: 26px;
+}
+
+.iframe1-margin {
+    margin-right: 68px;
+}
+
+.iframe2-margin {
+    margin-top: 68px;
+}
+
+.iframe-size {
+    height: 232px;
+    width: 584px;
+}
+
+#container3 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+#container3-1 {
+    position: relative;
+    height: 100%;
+    width: 50%;
+}
+
+#imagen {
+    top: -160px;
+    left: 200px;
+    position: absolute;
+    height: 660px;
+    width: 410px;
+    background-image: url(imgs/phone.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#container3-2 {
+    height: 100%;
+    width: 464px;
+    padding-top: 20px;
+}
+
+#container4 {
+    width: 100%;
+    height: 170px;
+    padding-left: 200px;
+    padding-top: 64px;
+}
+
+#container5 {
+    width: 100%;
+    height: 728px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-size {
+    height: 50%;
+    width: 33%;
+}
+
+#container6 {
+    height: 426px;
+    width: 100%;
+}
+
+#container6-1 {
+    height: 30%;
+    width: 100%;
+    padding-top: 64px;
+    padding-left: 200px;
+}
+
+#container6-2 {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container6-2-1 {
+    height: 200px;
+    width: 1040px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.temas {
+    height: 100%;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#container7 {
+    height: 518px;
+    width: 100%;
+    background-color: blue;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton2 {
+    height: 56px;
+    width: 345px;
+    background-color: #00F3BB;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#container8 {
+    height: 98px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#container8-1 {
+    width: 232px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container8-1 img:hover {
+    height: 20px;
+    width: 20px;
+}
+
+#boton2:hover {
+    cursor: pointer;
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+#boton2:hover .texto{
+    color: white;
+}
+
+@media screen and (max-width: 376px) {
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        right: 110%;
+        background: blue;
+        width: 100%;
+        top: 80px;
+        transition: all 0.5s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid #ffffff;
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        color: white;
+    }
+
+    header {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    #container1 span.titulo {
+        margin-right: 100px;
+    }
+
+    #logo {
+        margin-top: 25px;
+        height: 24px;
+        width: 24px;
+        background-image: url(imgs/logo.svg);
+        background-size: cover;
+        border-radius: 100%;
+    }
+
+    #burger-menu:checked ~ .menu {
+        transform: translateX(110%);
+    }
+
+    #container1 {
+        padding-top: 25px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #boton1 {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    .texto {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .subtitulos {
+        font-size: 36px;
+    }
+
+    #container2 {
+        height: 1203.5px;
+        width: 100%;
+        clip-path: polygon(0px 5%, 100% 0px, 100% 95%, 0px 100%);
+    }
+
+    #container2-1 {
+        height: 100px;
+        width: 100%;
+        padding-top: 64px;
+        margin-left: 16px;
+        padding-left: 0px;
+        display: block;
+    }
+
+    #container2-2 {
+        width: 90%;
+        height: 933px;
+        margin-left: 16px;
+        margin-top: 21px;
+    }
+    
+    .iframe1-margin {
+        margin-right: 0px;
+    }
+    
+    .iframe2-margin {
+        margin-top: 11px;
+    }
+    
+    .iframe-size {
+        height: 225px;
+        width: 100%;
+    }
+
+    #container3 {
+        width: 100%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container3-1 {
+        display: flex;
+        align-items: center;
+    }
+
+    #imagen {
+        left: 0px;
+    }
+
+    #container8 {
+        height: 121px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container4 {
+        width: 100%;
+        height: 120px;
+        padding-left: 16px;
+        padding-top: 0;
+        margin-top: 70px;
+    }
+
+    #container5 {
+        width: 100%;
+        height: 1458px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .img-size {
+        height: 16.66%;
+        width: 100%;
+    }
+
+    #container6 {
+        height: 1018px;
+        width: 100%;
+    }
+
+    #container6-1 {
+        height: 17%;
+        width: 100%;
+        padding-top: 48px;
+        padding-left: 16px;
+    }
+    
+    #container6-2 {
+        height: 83%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    #container6-2-1 {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #container7 {
+        height: 341px;
+        width: 100%;
+        background-color: blue;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container7 span {
+        text-align: center;
+    }
+
+    #boton2 {
+        height: 48px;
+        width: 288px;
+        background-color: #00F3BB;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    #container8 {
+        height: 121px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    #container8-1 {
+        width: 232px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #container3 {
+        width: 100%;
+        height: 850.5px;
+        display: flex;
+    }
+    
+    #container3-1 {
+        position: relative;
+        height: 60%;
+        width: 90%;
+    }
+    
+    #imagen {
+        top: -160px;
+        left: -30px;
+        position: absolute;
+        height: 660px;
+        width: 410px;
+        background-image: url(imgs/phone.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #container3-2 {
+        height: 40%;
+        width: 90%;
+        padding-top: 15px;
+    }
+
+    #container3-2 span {
+        margin-right: 100px;
+    }
+
+    div#container6-1 {
+        padding-right: 50px;
+    }
+
+    #container7 .subtitulos {
+        height: 126px;
+        width: 288px;
+    }
